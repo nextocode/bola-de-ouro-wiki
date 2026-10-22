@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bola de Ouro: todos os vencedores, de 1956 a 2025</title>
+<meta name="description" content="Wiki em português com todos os vencedores da Bola de Ouro, rankings, recordes e perfis dos maiores campeões.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0c0a08;--panel:#15110c;--line:#2e2616;--gold:#c9a24b;--champ:#efe3c2;--bronze:#8a6a24;--text:#e6dfcd;--mute:#a39a82;
+--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font:400 17px/1.6 var(--sans)}
+a{color:var(--gold)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--champ);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:rgba(12,10,8,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;align-items:center;height:54px;overflow-x:auto;white-space:nowrap}
+nav b{font:700 21px var(--serif);color:var(--champ);margin-right:auto}
+nav a{text-decoration:none;color:var(--mute);font-size:15px}
+nav a:hover{color:var(--champ)}
+.hero{padding:84px 0 56px;background:radial-gradient(70% 90% at 78% 0%,rgba(201,162,75,.22),transparent 70%)}
+.hero .ano{font:700 clamp(110px,26vw,270px)/.8 var(--serif);color:transparent;-webkit-text-stroke:2px var(--gold);letter-spacing:-.02em;margin:0}
+.hero h1{font:700 clamp(34px,6vw,64px)/1.05 var(--serif);color:var(--champ);margin:22px 0 6px}
+.hero p{max-width:56ch;color:var(--mute);margin:0 0 6px}
+.hero .quem{font:italic 500 clamp(22px,3.4vw,34px) var(--serif);color:var(--gold);margin:0 0 18px}
+.aviso{margin-top:30px;padding:14px 18px;border-left:3px solid var(--gold);background:var(--panel);max-width:62ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:8px 0 0}
+.stats div{padding:22px 18px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats strong{display:block;font:700 44px/1 var(--serif);color:var(--champ)}
+.stats span{color:var(--mute);font-size:15px}
+section{padding:64px 0 8px}
+h2{font:700 clamp(30px,4.5vw,44px)/1.1 var(--serif);color:var(--champ);margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 28px;max-width:60ch}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}
+h3{font:700 24px var(--serif);color:var(--gold);margin:0 0 14px}
+.bar{display:grid;grid-template-columns:150px 1fr 28px;gap:12px;align-items:center;margin:9px 0;font-size:15px}
+.bar i{display:block;height:10px;background:linear-gradient(90deg,var(--bronze),var(--gold));border-radius:2px}
+.bar b{text-align:right;color:var(--champ)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.tabs button{font:600 15px var(--sans);padding:9px 18px;border:1px solid var(--line);background:transparent;color:var(--mute);border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.tabs input{flex:1;min-width:200px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:400 16px var(--sans)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:700px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top}
+th{position:sticky;top:0;background:var(--panel);color:var(--mute);font-weight:600}
+td.y{font:700 22px var(--serif);color:var(--gold)}
+tr.rep td.n{color:var(--champ);font-weight:600}
+tr.rep td.n::after{content:" ★";color:var(--gold)}
+tr:hover td{background:rgba(201,162,75,.06)}
+.obs{color:var(--mute);font-size:14px}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.links a{display:block;padding:18px;border:1px solid var(--line);border-radius:6px;text-decoration:none;color:var(--text);background:var(--panel)}
+.links a:hover{border-color:var(--gold)}
+.links strong{display:block;font:700 22px var(--serif);color:var(--champ)}
+.links span{color:var(--mute);font-size:14px}
+footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+#erro{padding:16px;border:1px solid var(--bronze);margin:20px 0}
+@media(max-width:560px){.bar{grid-template-columns:110px 1fr 24px}.hero{padding-top:56px}.stats div{border-right:0;border-bottom:1px solid var(--line)}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Bola de Ouro</b><a href="#ranking">Ranking</a><a href="#vencedores">Vencedores</a><a href="#paginas">Perfis e história</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<p class="ano" id="h-ano" aria-hidden="true">2025</p>
+<h1>Quem foi o melhor do mundo, ano a ano</h1>
+<p class="quem" id="h-quem">Carregando o último vencedor</p>
+<p>Todos os vencedores da Bola de Ouro desde 1956, com rankings, recordes e os perfis dos maiores campeões.</p>
+<div class="aviso">A 70ª cerimônia será em <strong>26 de outubro de 2026, em Londres</strong>. Esta wiki cobre as edições até 2025.</div>
+<div id="erro" hidden>Não consegui carregar os dados. Abra o site pelo endereço do GitHub Pages; abrir o arquivo direto do computador não funciona.</div>
+</div></header>
+
+<div class="wrap"><div class="stats" id="stats"></div></div>
+
+<main class="wrap">
+<section id="ranking">
+<h2>Os maiores campeões</h2>
+<p class="sub">Jogadores que venceram mais de uma vez e clubes com mais títulos, contando o clube do jogador na premiação.</p>
+<div class="cols"><div><h3>Jogadores</h3><div id="r-jog"></div></div><div><h3>Clubes</h3><div id="r-clu"></div></div></div>
+</section>
+
+<section id="vencedores">
+<h2>Todos os vencedores</h2>
+<p class="sub">A estrela marca quem já tinha vencido antes. Digite um nome, clube ou ano para filtrar.</p>
+<div class="tabs">
+<button id="t-m" aria-pressed="true">Masculino</button><button id="t-f" aria-pressed="false">Feminino</button>
+<input id="q" type="search" placeholder="Buscar por jogador, clube ou ano" aria-label="Buscar na tabela">
+</div>
+<div class="tw"><table><thead><tr><th>Ano</th><th>Jogador</th><th>Nacionalidade</th><th>Clube</th><th>Título</th><th>Observação</th></tr></thead><tbody id="tb"></tbody></table></div>
+</section>
+
+<section id="paginas">
+<h2>Perfis, história e curiosidades</h2>
+<p class="sub">O restante da wiki está nas páginas abaixo.</p>
+<div class="links">
+<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/perfis.md"><strong>Perfis dos campeões</strong><span>Messi, Cristiano Ronaldo, Platini, Cruyff e mais</span></a>
+<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/ranking.md"><strong>Ranking completo</strong><span>Por jogador, país, clube e década</span></a>
+<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/historia.md"><strong>História e regras</strong><span>Origem, votação e a fase com a FIFA</span></a>
+<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/recordes-e-curiosidades.md"><strong>Recordes e curiosidades</strong><span>Mais jovem, mais velho, sequências</span></a>
+<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/brasileiros.md"><strong>Brasileiros</strong><span>Ronaldo, Rivaldo, Ronaldinho e Kaká</span></a>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">Projeto independente, sem vínculo com a France Football ou a FIFA. Código e dados no <a href="https://github.com/nextocode/bola-de-ouro-wiki">GitHub</a>.</div></footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const get=f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()});
+let D={m:[],f:[]},tab="m";
+
+function anota(l){const c={};return l.map(x=>{if(!x.jogador)return{...x,n:0};c[x.jogador]=(c[x.jogador]||0)+1;return{...x,n:c[x.jogador]}})}
+function conta(l,k){const c={};l.filter(x=>x.jogador).forEach(x=>c[x[k]]=(c[x[k]]||0)+1);return Object.entries(c).sort((a,b)=>b[1]-a[1])}
+function barras(el,itens){const max=itens[0][1];$(el).innerHTML=itens.map(([n,q])=>`<div class="bar"><span>${esc(n)}</span><i style="width:${q/max*100}%"></i><b>${q}</b></div>`).join("")}
+
+function tabela(){
+  const q=$("#q").value.trim().toLowerCase();
+  const linhas=D[tab].filter(x=>!q||[x.ano,x.jogador,x.clube,x.nacionalidade].join(" ").toLowerCase().includes(q)).reverse();
+  $("#tb").innerHTML=linhas.length?linhas.map(x=>x.jogador?
+   `<tr class="${x.n>1?"rep":""}"><td class="y">${x.ano}</td><td class="n">${esc(x.jogador)}</td><td>${esc(x.nacionalidade)}</td><td>${esc(x.clube)}</td><td>${x.n}º</td><td class="obs">${esc(x.observacao)}</td></tr>`:
+   `<tr><td class="y">${x.ano}</td><td colspan="4"><em>Não concedido</em></td><td class="obs">${esc(x.observacao)}</td></tr>`).join(""):
+   `<tr><td colspan="6">Nenhum resultado. Tente outro nome, clube ou ano.</td></tr>`;
+}
+function aba(t){tab=t;$("#t-m").setAttribute("aria-pressed",t==="m");$("#t-f").setAttribute("aria-pressed",t==="f");tabela()}
+
+Promise.all([get("data/vencedores-masculino.json"),get("data/vencedoras-feminino.json")]).then(([m,f])=>{
+  D.m=anota(m);D.f=anota(f);
+  const v=D.m.filter(x=>x.jogador),ult=v[v.length-1],jog=conta(D.m,"jogador");
+  $("#h-ano").textContent=ult.ano;
+  $("#h-quem").textContent=`${ult.jogador}, ${ult.clube}`;
+  $("#stats").innerHTML=[[v.length,"edições masculinas concedidas"],[jog.length,"jogadores diferentes premiados"],[jog[0][1],`títulos de ${jog[0][0]}, o recorde`],[D.f.filter(x=>x.jogador).length,"edições da Bola de Ouro feminina"]]
+    .map(([n,t])=>`<div><strong>${n}</strong><span>${t}</span></div>`).join("");
+  barras("#r-jog",jog.filter(x=>x[1]>1));
+  barras("#r-clu",conta(D.m,"clube").filter(x=>x[1]>3));
+  tabela();
+}).catch(()=>{$("#erro").hidden=false});
+
+$("#t-m").onclick=()=>aba("m");$("#t-f").onclick=()=>aba("f");$("#q").oninput=tabela;
+</script>
+</body>
+</html>
