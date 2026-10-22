@@ -1,0 +1,492 @@
+[
+  {
+    "ano": 1956,
+    "jogador": "Stanley Matthews",
+    "nacionalidade": "Inglaterra",
+    "clube": "Blackpool",
+    "observacao": "Primeira edição"
+  },
+  {
+    "ano": 1957,
+    "jogador": "Alfredo Di Stéfano",
+    "nacionalidade": "Argentina / Espanha",
+    "clube": "Real Madrid",
+    "observacao": null
+  },
+  {
+    "ano": 1958,
+    "jogador": "Raymond Kopa",
+    "nacionalidade": "França",
+    "clube": "Real Madrid",
+    "observacao": null
+  },
+  {
+    "ano": 1959,
+    "jogador": "Alfredo Di Stéfano",
+    "nacionalidade": "Argentina / Espanha",
+    "clube": "Real Madrid",
+    "observacao": null
+  },
+  {
+    "ano": 1960,
+    "jogador": "Luis Suárez",
+    "nacionalidade": "Espanha",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 1961,
+    "jogador": "Omar Sívori",
+    "nacionalidade": "Argentina / Itália",
+    "clube": "Juventus",
+    "observacao": null
+  },
+  {
+    "ano": 1962,
+    "jogador": "Josef Masopust",
+    "nacionalidade": "Tchecoslováquia",
+    "clube": "Dukla Praga",
+    "observacao": null
+  },
+  {
+    "ano": 1963,
+    "jogador": "Lev Yashin",
+    "nacionalidade": "União Soviética",
+    "clube": "Dínamo de Moscou",
+    "observacao": "Único goleiro vencedor"
+  },
+  {
+    "ano": 1964,
+    "jogador": "Denis Law",
+    "nacionalidade": "Escócia",
+    "clube": "Manchester United",
+    "observacao": null
+  },
+  {
+    "ano": 1965,
+    "jogador": "Eusébio",
+    "nacionalidade": "Portugal",
+    "clube": "Benfica",
+    "observacao": null
+  },
+  {
+    "ano": 1966,
+    "jogador": "Bobby Charlton",
+    "nacionalidade": "Inglaterra",
+    "clube": "Manchester United",
+    "observacao": "Campeão mundial com a Inglaterra"
+  },
+  {
+    "ano": 1967,
+    "jogador": "Flórián Albert",
+    "nacionalidade": "Hungria",
+    "clube": "Ferencváros",
+    "observacao": null
+  },
+  {
+    "ano": 1968,
+    "jogador": "George Best",
+    "nacionalidade": "Irlanda do Norte",
+    "clube": "Manchester United",
+    "observacao": null
+  },
+  {
+    "ano": 1969,
+    "jogador": "Gianni Rivera",
+    "nacionalidade": "Itália",
+    "clube": "Milan",
+    "observacao": null
+  },
+  {
+    "ano": 1970,
+    "jogador": "Gerd Müller",
+    "nacionalidade": "Alemanha Ocidental",
+    "clube": "Bayern de Munique",
+    "observacao": null
+  },
+  {
+    "ano": 1971,
+    "jogador": "Johan Cruyff",
+    "nacionalidade": "Países Baixos",
+    "clube": "Ajax",
+    "observacao": null
+  },
+  {
+    "ano": 1972,
+    "jogador": "Franz Beckenbauer",
+    "nacionalidade": "Alemanha Ocidental",
+    "clube": "Bayern de Munique",
+    "observacao": null
+  },
+  {
+    "ano": 1973,
+    "jogador": "Johan Cruyff",
+    "nacionalidade": "Países Baixos",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 1974,
+    "jogador": "Johan Cruyff",
+    "nacionalidade": "Países Baixos",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 1975,
+    "jogador": "Oleg Blokhin",
+    "nacionalidade": "União Soviética",
+    "clube": "Dínamo de Kiev",
+    "observacao": null
+  },
+  {
+    "ano": 1976,
+    "jogador": "Franz Beckenbauer",
+    "nacionalidade": "Alemanha Ocidental",
+    "clube": "Bayern de Munique",
+    "observacao": null
+  },
+  {
+    "ano": 1977,
+    "jogador": "Allan Simonsen",
+    "nacionalidade": "Dinamarca",
+    "clube": "Borussia Mönchengladbach",
+    "observacao": null
+  },
+  {
+    "ano": 1978,
+    "jogador": "Kevin Keegan",
+    "nacionalidade": "Inglaterra",
+    "clube": "Hamburgo",
+    "observacao": null
+  },
+  {
+    "ano": 1979,
+    "jogador": "Kevin Keegan",
+    "nacionalidade": "Inglaterra",
+    "clube": "Hamburgo",
+    "observacao": null
+  },
+  {
+    "ano": 1980,
+    "jogador": "Karl-Heinz Rummenigge",
+    "nacionalidade": "Alemanha Ocidental",
+    "clube": "Bayern de Munique",
+    "observacao": null
+  },
+  {
+    "ano": 1981,
+    "jogador": "Karl-Heinz Rummenigge",
+    "nacionalidade": "Alemanha Ocidental",
+    "clube": "Bayern de Munique",
+    "observacao": null
+  },
+  {
+    "ano": 1982,
+    "jogador": "Paolo Rossi",
+    "nacionalidade": "Itália",
+    "clube": "Juventus",
+    "observacao": "Campeão mundial e artilheiro da Copa de 1982"
+  },
+  {
+    "ano": 1983,
+    "jogador": "Michel Platini",
+    "nacionalidade": "França",
+    "clube": "Juventus",
+    "observacao": null
+  },
+  {
+    "ano": 1984,
+    "jogador": "Michel Platini",
+    "nacionalidade": "França",
+    "clube": "Juventus",
+    "observacao": null
+  },
+  {
+    "ano": 1985,
+    "jogador": "Michel Platini",
+    "nacionalidade": "França",
+    "clube": "Juventus",
+    "observacao": null
+  },
+  {
+    "ano": 1986,
+    "jogador": "Igor Belanov",
+    "nacionalidade": "União Soviética",
+    "clube": "Dínamo de Kiev",
+    "observacao": null
+  },
+  {
+    "ano": 1987,
+    "jogador": "Ruud Gullit",
+    "nacionalidade": "Países Baixos",
+    "clube": "Milan",
+    "observacao": null
+  },
+  {
+    "ano": 1988,
+    "jogador": "Marco van Basten",
+    "nacionalidade": "Países Baixos",
+    "clube": "Milan",
+    "observacao": null
+  },
+  {
+    "ano": 1989,
+    "jogador": "Marco van Basten",
+    "nacionalidade": "Países Baixos",
+    "clube": "Milan",
+    "observacao": null
+  },
+  {
+    "ano": 1990,
+    "jogador": "Lothar Matthäus",
+    "nacionalidade": "Alemanha Ocidental",
+    "clube": "Inter de Milão",
+    "observacao": "Campeão mundial com a Alemanha Ocidental"
+  },
+  {
+    "ano": 1991,
+    "jogador": "Jean-Pierre Papin",
+    "nacionalidade": "França",
+    "clube": "Olympique de Marselha",
+    "observacao": null
+  },
+  {
+    "ano": 1992,
+    "jogador": "Marco van Basten",
+    "nacionalidade": "Países Baixos",
+    "clube": "Milan",
+    "observacao": null
+  },
+  {
+    "ano": 1993,
+    "jogador": "Roberto Baggio",
+    "nacionalidade": "Itália",
+    "clube": "Juventus",
+    "observacao": null
+  },
+  {
+    "ano": 1994,
+    "jogador": "Hristo Stoichkov",
+    "nacionalidade": "Bulgária",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 1995,
+    "jogador": "George Weah",
+    "nacionalidade": "Libéria",
+    "clube": "Milan",
+    "observacao": "Primeiro e único africano vencedor"
+  },
+  {
+    "ano": 1996,
+    "jogador": "Matthias Sammer",
+    "nacionalidade": "Alemanha",
+    "clube": "Borussia Dortmund",
+    "observacao": null
+  },
+  {
+    "ano": 1997,
+    "jogador": "Ronaldo",
+    "nacionalidade": "Brasil",
+    "clube": "Inter de Milão",
+    "observacao": "Mais jovem vencedor (21 anos)"
+  },
+  {
+    "ano": 1998,
+    "jogador": "Zinedine Zidane",
+    "nacionalidade": "França",
+    "clube": "Juventus",
+    "observacao": "Campeão mundial com a França"
+  },
+  {
+    "ano": 1999,
+    "jogador": "Rivaldo",
+    "nacionalidade": "Brasil",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 2000,
+    "jogador": "Luís Figo",
+    "nacionalidade": "Portugal",
+    "clube": "Real Madrid",
+    "observacao": null
+  },
+  {
+    "ano": 2001,
+    "jogador": "Michael Owen",
+    "nacionalidade": "Inglaterra",
+    "clube": "Liverpool",
+    "observacao": null
+  },
+  {
+    "ano": 2002,
+    "jogador": "Ronaldo",
+    "nacionalidade": "Brasil",
+    "clube": "Real Madrid",
+    "observacao": "Campeão mundial e artilheiro da Copa de 2002"
+  },
+  {
+    "ano": 2003,
+    "jogador": "Pavel Nedvěd",
+    "nacionalidade": "República Tcheca",
+    "clube": "Juventus",
+    "observacao": null
+  },
+  {
+    "ano": 2004,
+    "jogador": "Andriy Shevchenko",
+    "nacionalidade": "Ucrânia",
+    "clube": "Milan",
+    "observacao": null
+  },
+  {
+    "ano": 2005,
+    "jogador": "Ronaldinho",
+    "nacionalidade": "Brasil",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 2006,
+    "jogador": "Fabio Cannavaro",
+    "nacionalidade": "Itália",
+    "clube": "Real Madrid",
+    "observacao": "Capitão campeão mundial com a Itália"
+  },
+  {
+    "ano": 2007,
+    "jogador": "Kaká",
+    "nacionalidade": "Brasil",
+    "clube": "Milan",
+    "observacao": "Último brasileiro vencedor (até 2025)"
+  },
+  {
+    "ano": 2008,
+    "jogador": "Cristiano Ronaldo",
+    "nacionalidade": "Portugal",
+    "clube": "Manchester United",
+    "observacao": null
+  },
+  {
+    "ano": 2009,
+    "jogador": "Lionel Messi",
+    "nacionalidade": "Argentina",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 2010,
+    "jogador": "Lionel Messi",
+    "nacionalidade": "Argentina",
+    "clube": "Barcelona",
+    "observacao": "Ballon d'Or FIFA (prêmio unificado com o FIFA World Player of the Year, 2010–2015)"
+  },
+  {
+    "ano": 2011,
+    "jogador": "Lionel Messi",
+    "nacionalidade": "Argentina",
+    "clube": "Barcelona",
+    "observacao": "Ballon d'Or FIFA (prêmio unificado com o FIFA World Player of the Year, 2010–2015)"
+  },
+  {
+    "ano": 2012,
+    "jogador": "Lionel Messi",
+    "nacionalidade": "Argentina",
+    "clube": "Barcelona",
+    "observacao": "Ballon d'Or FIFA (prêmio unificado com o FIFA World Player of the Year, 2010–2015)"
+  },
+  {
+    "ano": 2013,
+    "jogador": "Cristiano Ronaldo",
+    "nacionalidade": "Portugal",
+    "clube": "Real Madrid",
+    "observacao": "Ballon d'Or FIFA (prêmio unificado com o FIFA World Player of the Year, 2010–2015)"
+  },
+  {
+    "ano": 2014,
+    "jogador": "Cristiano Ronaldo",
+    "nacionalidade": "Portugal",
+    "clube": "Real Madrid",
+    "observacao": "Ballon d'Or FIFA (prêmio unificado com o FIFA World Player of the Year, 2010–2015)"
+  },
+  {
+    "ano": 2015,
+    "jogador": "Lionel Messi",
+    "nacionalidade": "Argentina",
+    "clube": "Barcelona",
+    "observacao": "Ballon d'Or FIFA (prêmio unificado com o FIFA World Player of the Year, 2010–2015)"
+  },
+  {
+    "ano": 2016,
+    "jogador": "Cristiano Ronaldo",
+    "nacionalidade": "Portugal",
+    "clube": "Real Madrid",
+    "observacao": "France Football volta a conceder o prêmio sozinha"
+  },
+  {
+    "ano": 2017,
+    "jogador": "Cristiano Ronaldo",
+    "nacionalidade": "Portugal",
+    "clube": "Real Madrid",
+    "observacao": null
+  },
+  {
+    "ano": 2018,
+    "jogador": "Luka Modrić",
+    "nacionalidade": "Croácia",
+    "clube": "Real Madrid",
+    "observacao": "Quebrou a sequência de Messi e Cristiano Ronaldo"
+  },
+  {
+    "ano": 2019,
+    "jogador": "Lionel Messi",
+    "nacionalidade": "Argentina",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 2020,
+    "jogador": null,
+    "nacionalidade": null,
+    "clube": null,
+    "observacao": "Não concedido (pandemia de COVID-19)"
+  },
+  {
+    "ano": 2021,
+    "jogador": "Lionel Messi",
+    "nacionalidade": "Argentina",
+    "clube": "Paris Saint-Germain",
+    "observacao": null
+  },
+  {
+    "ano": 2022,
+    "jogador": "Karim Benzema",
+    "nacionalidade": "França",
+    "clube": "Real Madrid",
+    "observacao": "Primeira edição com critério por temporada (2021–22)"
+  },
+  {
+    "ano": 2023,
+    "jogador": "Lionel Messi",
+    "nacionalidade": "Argentina",
+    "clube": "Inter Miami",
+    "observacao": "Oitavo título; temporada 2022–23 pelo PSG"
+  },
+  {
+    "ano": 2024,
+    "jogador": "Rodri",
+    "nacionalidade": "Espanha",
+    "clube": "Manchester City",
+    "observacao": null
+  },
+  {
+    "ano": 2025,
+    "jogador": "Ousmane Dembélé",
+    "nacionalidade": "França",
+    "clube": "Paris Saint-Germain",
+    "observacao": "Temporada do triplete do PSG"
+  }
+]

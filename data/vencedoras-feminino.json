@@ -1,0 +1,58 @@
+[
+  {
+    "ano": 2018,
+    "jogador": "Ada Hegerberg",
+    "nacionalidade": "Noruega",
+    "clube": "Olympique Lyonnais",
+    "observacao": "Primeira edição feminina"
+  },
+  {
+    "ano": 2019,
+    "jogador": "Megan Rapinoe",
+    "nacionalidade": "Estados Unidos",
+    "clube": "OL Reign",
+    "observacao": "Campeã mundial com os EUA em 2019"
+  },
+  {
+    "ano": 2020,
+    "jogador": null,
+    "nacionalidade": null,
+    "clube": null,
+    "observacao": "Não concedido (pandemia de COVID-19)"
+  },
+  {
+    "ano": 2021,
+    "jogador": "Alexia Putellas",
+    "nacionalidade": "Espanha",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 2022,
+    "jogador": "Alexia Putellas",
+    "nacionalidade": "Espanha",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 2023,
+    "jogador": "Aitana Bonmatí",
+    "nacionalidade": "Espanha",
+    "clube": "Barcelona",
+    "observacao": "Campeã mundial com a Espanha"
+  },
+  {
+    "ano": 2024,
+    "jogador": "Aitana Bonmatí",
+    "nacionalidade": "Espanha",
+    "clube": "Barcelona",
+    "observacao": null
+  },
+  {
+    "ano": 2025,
+    "jogador": "Aitana Bonmatí",
+    "nacionalidade": "Espanha",
+    "clube": "Barcelona",
+    "observacao": null
+  }
+]
