@@ -13,7 +13,7 @@
 --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--ink);color:var(--text);font:400 17px/1.6 var(--sans)}
+body{font-variant-numeric:lining-nums;margin:0;background:var(--ink);color:var(--text);font:400 17px/1.6 var(--sans)}
 a{color:var(--gold)}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--champ);outline-offset:3px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
@@ -23,7 +23,7 @@ nav b{font:700 21px var(--serif);color:var(--champ);margin-right:auto}
 nav a{text-decoration:none;color:var(--mute);font-size:15px}
 nav a:hover{color:var(--champ)}
 .hero{padding:84px 0 56px;background:radial-gradient(70% 90% at 78% 0%,rgba(201,162,75,.22),transparent 70%)}
-.hero .ano{font:700 clamp(110px,26vw,270px)/.8 var(--serif);color:transparent;-webkit-text-stroke:2px var(--gold);letter-spacing:-.02em;margin:0}
+.hero .ano{font:700 clamp(110px,26vw,270px)/1 var(--serif);font-variant-numeric:lining-nums;color:transparent;-webkit-text-stroke:2px var(--gold);letter-spacing:-.02em;margin:0 0 8px}
 .hero h1{font:700 clamp(34px,6vw,64px)/1.05 var(--serif);color:var(--champ);margin:22px 0 6px}
 .hero p{max-width:56ch;color:var(--mute);margin:0 0 6px}
 .hero .quem{font:italic 500 clamp(22px,3.4vw,34px) var(--serif);color:var(--gold);margin:0 0 18px}
@@ -51,9 +51,14 @@ th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font
 th{position:sticky;top:0;background:var(--panel);color:var(--mute);font-weight:600}
 td.y{font:700 22px var(--serif);color:var(--gold)}
 tr.rep td.n{color:var(--champ);font-weight:600}
-tr.rep td.n::after{content:" ★";color:var(--gold)}
+.b{display:inline-block;margin-left:8px;padding:1px 9px;border:1px solid var(--gold);border-radius:999px;color:var(--gold);font-size:12.5px;font-weight:600;white-space:nowrap}
 tr:hover td{background:rgba(201,162,75,.06)}
 .obs{color:var(--mute);font-size:14px}
+.po{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line)}
+.po .a{font:700 38px/1 var(--serif);color:var(--gold)}
+.po h3{margin:0 0 6px;font-size:26px;color:var(--champ)}
+.po p{margin:0;color:var(--text);max-width:68ch}
+@media(max-width:560px){.po{grid-template-columns:1fr;gap:6px}}
 .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
 .links a{display:block;padding:18px;border:1px solid var(--line);border-radius:6px;text-decoration:none;color:var(--text);background:var(--panel)}
 .links a:hover{border-color:var(--gold)}
@@ -65,12 +70,11 @@ footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);colo
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b>Bola de Ouro</b><a href="#ranking">Ranking</a><a href="#vencedores">Vencedores</a><a href="#paginas">Perfis e história</a></div></nav>
+<nav><div class="wrap"><b>Bola de Ouro</b><a href="#ranking">Ranking</a><a href="#vencedores">Vencedores</a><a href="#polemicas">Polêmicas</a><a href="#paginas">Perfis e história</a></div></nav>
 
 <header class="hero"><div class="wrap">
 <p class="ano" id="h-ano" aria-hidden="true">2025</p>
 <h1>Quem foi o melhor do mundo, ano a ano</h1>
-<p class="quem" id="h-quem">Carregando o último vencedor</p>
 <p>Todos os vencedores da Bola de Ouro desde 1956, com rankings, recordes e os perfis dos maiores campeões.</p>
 <div class="aviso">A 70ª cerimônia será em <strong>26 de outubro de 2026, em Londres</strong>. Esta wiki cobre as edições até 2025.</div>
 <div id="erro" hidden>Não consegui carregar os dados. Abra o site pelo endereço do GitHub Pages; abrir o arquivo direto do computador não funciona.</div>
@@ -87,23 +91,39 @@ footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);colo
 
 <section id="vencedores">
 <h2>Todos os vencedores</h2>
-<p class="sub">A estrela marca quem já tinha vencido antes. Digite um nome, clube ou ano para filtrar.</p>
+<p class="sub">Quando um jogador vence de novo, aparece o selo com o número do título ao lado do nome, como “3º título”. Digite um nome, clube ou ano para filtrar.</p>
 <div class="tabs">
 <button id="t-m" aria-pressed="true">Masculino</button><button id="t-f" aria-pressed="false">Feminino</button>
 <input id="q" type="search" placeholder="Buscar por jogador, clube ou ano" aria-label="Buscar na tabela">
 </div>
-<div class="tw"><table><thead><tr><th>Ano</th><th>Jogador</th><th>Nacionalidade</th><th>Clube</th><th>Título</th><th>Observação</th></tr></thead><tbody id="tb"></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Ano</th><th>Jogador</th><th>Nacionalidade</th><th>Clube</th><th>Observação</th></tr></thead><tbody id="tb"></tbody></table></div>
+</section>
+
+<section id="polemicas">
+<h2>Bolas de Ouro polêmicas</h2>
+<p class="sub">Resultados que dividiram opiniões. Em todos eles há bons argumentos dos dois lados, e aqui estão só os fatos de cada caso.</p>
+<div>
+<div class="po"><div class="a">1986</div><div><h3>O campeão do mundo que não podia ganhar</h3><p>Maradona foi o grande nome da Copa de 1986, mas o prêmio só aceitava jogadores europeus. Venceu Igor Belanov, do Dínamo de Kiev. A France Football deu a Maradona uma Bola de Ouro honorária em 1995.</p></div></div>
+<div class="po"><div class="a">2010</div><div><h3>Messi contra os campeões do mundo</h3><p>A Espanha tinha acabado de ganhar a Copa, com gol de Iniesta na final. Messi venceu o prêmio unificado com a FIFA, e Iniesta e Xavi completaram o pódio. Wesley Sneijder, que ganhou tudo com a Inter e foi vice-campeão mundial pela Holanda, ficou fora dele.</p></div></div>
+<div class="po"><div class="a">2013</div><div><h3>Ribéry e o triplete que não bastou</h3><p>Franck Ribéry ganhou Champions League, Bundesliga e Copa da Alemanha pelo Bayern de Munique. Terminou em terceiro, atrás de Cristiano Ronaldo e Messi, e criticou publicamente o resultado.</p></div></div>
+<div class="po"><div class="a">2014</div><div><h3>O goleiro campeão do mundo em terceiro</h3><p>Manuel Neuer foi campeão mundial com a Alemanha e muito elogiado na Copa, mas ficou em terceiro, muito perto de Messi na votação. Venceu Cristiano Ronaldo.</p></div></div>
+<div class="po"><div class="a">2019</div><div><h3>Messi ou Van Dijk</h3><p>Virgil van Dijk foi campeão da Champions League pelo Liverpool e terminou em segundo, por uma diferença pequena. O debate foi sobre o prêmio favorecer quase sempre atacantes e quem faz gols.</p></div></div>
+<div class="po"><div class="a">2021</div><div><h3>Messi ou Lewandowski</h3><p>Lewandowski quebrou o recorde de gols em uma edição da Bundesliga, com 41, e já era visto como favorito em 2020, ano em que não houve prêmio. Messi, campeão da Copa América com a Argentina, venceu, e Lewandowski ficou em segundo. Ele recebeu o troféu de melhor atacante.</p></div></div>
+<div class="po"><div class="a">2023</div><div><h3>Messi ou Haaland</h3><p>Erling Haaland fez a temporada do triplete do Manchester City e foi o segundo colocado. Messi levou pela Copa do Mundo de 2022 vencida pela Argentina, e parte da imprensa achou que o prêmio deveria ter ido para Haaland.</p></div></div>
+<div class="po"><div class="a">2024</div><div><h3>Rodri vence e o Real Madrid boicota</h3><p>Vinícius Júnior, campeão espanhol e europeu pelo Real Madrid, era visto como favorito. Rodri, campeão inglês e da Eurocopa, venceu. Horas antes da cerimônia, o Real Madrid avisou que não iria, e ninguém do clube compareceu.</p></div></div>
+<div class="po"><div class="a">2025</div><div><h3>Raphinha em quinto</h3><p>Raphinha fez a melhor temporada da carreira no Barcelona, que ganhou o Espanhol, a Copa do Rei e a Supercopa. Na Champions League, somou 20 participações em gols (12 gols e 8 assistências), mais que as 19 de Messi em 2011–12. Terminou em quinto, atrás de Dembélé, Lamine Yamal, Vitinha e Salah. Neymar chamou o resultado de piada, e o próprio Raphinha disse que o prêmio dá peso demais ao título da Champions. Quem defende o resultado lembra que Dembélé foi decisivo no triplete do PSG, campeão europeu.</p></div></div>
+</div>
 </section>
 
 <section id="paginas">
 <h2>Perfis, história e curiosidades</h2>
 <p class="sub">O restante da wiki está nas páginas abaixo.</p>
 <div class="links">
-<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/perfis.md"><strong>Perfis dos campeões</strong><span>Messi, Cristiano Ronaldo, Platini, Cruyff e mais</span></a>
-<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/ranking.md"><strong>Ranking completo</strong><span>Por jogador, país, clube e década</span></a>
-<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/historia.md"><strong>História e regras</strong><span>Origem, votação e a fase com a FIFA</span></a>
-<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/recordes-e-curiosidades.md"><strong>Recordes e curiosidades</strong><span>Mais jovem, mais velho, sequências</span></a>
-<a href="https://github.com/nextocode/bola-de-ouro-wiki/blob/main/docs/brasileiros.md"><strong>Brasileiros</strong><span>Ronaldo, Rivaldo, Ronaldinho e Kaká</span></a>
+<a href="pagina.html?p=perfis"><strong>Perfis dos campeões</strong><span>Messi, Cristiano Ronaldo, Platini, Cruyff e mais</span></a>
+<a href="pagina.html?p=ranking"><strong>Ranking completo</strong><span>Por jogador, país, clube e década</span></a>
+<a href="pagina.html?p=historia"><strong>História e regras</strong><span>Origem, votação e a fase com a FIFA</span></a>
+<a href="pagina.html?p=recordes-e-curiosidades"><strong>Recordes e curiosidades</strong><span>Mais jovem, mais velho, sequências</span></a>
+<a href="pagina.html?p=brasileiros"><strong>Brasileiros</strong><span>Ronaldo, Rivaldo, Ronaldinho e Kaká</span></a>
 </div>
 </section>
 </main>
@@ -124,9 +144,9 @@ function tabela(){
   const q=$("#q").value.trim().toLowerCase();
   const linhas=D[tab].filter(x=>!q||[x.ano,x.jogador,x.clube,x.nacionalidade].join(" ").toLowerCase().includes(q)).reverse();
   $("#tb").innerHTML=linhas.length?linhas.map(x=>x.jogador?
-   `<tr class="${x.n>1?"rep":""}"><td class="y">${x.ano}</td><td class="n">${esc(x.jogador)}</td><td>${esc(x.nacionalidade)}</td><td>${esc(x.clube)}</td><td>${x.n}º</td><td class="obs">${esc(x.observacao)}</td></tr>`:
-   `<tr><td class="y">${x.ano}</td><td colspan="4"><em>Não concedido</em></td><td class="obs">${esc(x.observacao)}</td></tr>`).join(""):
-   `<tr><td colspan="6">Nenhum resultado. Tente outro nome, clube ou ano.</td></tr>`;
+   `<tr class="${x.n>1?"rep":""}"><td class="y">${x.ano}</td><td class="n">${esc(x.jogador)}${x.n>1?`<span class="b">${x.n}º título</span>`:""}</td><td>${esc(x.nacionalidade)}</td><td>${esc(x.clube)}</td><td class="obs">${esc(x.observacao)}</td></tr>`:
+   `<tr><td class="y">${x.ano}</td><td colspan="3"><em>Não concedido</em></td><td class="obs">${esc(x.observacao)}</td></tr>`).join(""):
+   `<tr><td colspan="5">Nenhum resultado. Tente outro nome, clube ou ano.</td></tr>`;
 }
 function aba(t){tab=t;$("#t-m").setAttribute("aria-pressed",t==="m");$("#t-f").setAttribute("aria-pressed",t==="f");tabela()}
 
@@ -134,7 +154,6 @@ Promise.all([get("data/vencedores-masculino.json"),get("data/vencedoras-feminino
   D.m=anota(m);D.f=anota(f);
   const v=D.m.filter(x=>x.jogador),ult=v[v.length-1],jog=conta(D.m,"jogador");
   $("#h-ano").textContent=ult.ano;
-  $("#h-quem").textContent=`${ult.jogador}, ${ult.clube}`;
   $("#stats").innerHTML=[[v.length,"edições masculinas concedidas"],[jog.length,"jogadores diferentes premiados"],[jog[0][1],`títulos de ${jog[0][0]}, o recorde`],[D.f.filter(x=>x.jogador).length,"edições da Bola de Ouro feminina"]]
     .map(([n,t])=>`<div><strong>${n}</strong><span>${t}</span></div>`).join("");
   barras("#r-jog",jog.filter(x=>x[1]>1));
