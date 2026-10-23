@@ -42,7 +42,7 @@ table{border-collapse:collapse;width:100%;min-width:640px}
 th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top}
 th{background:var(--panel);color:var(--mute);font-weight:600;white-space:nowrap}
 tr:last-child td{border-bottom:0}
-td.p{font:700 22px var(--serif);color:var(--gold);width:64px}
+td.p{font:700 22px var(--serif);color:var(--gold);width:72px;white-space:nowrap}
 td.n{color:var(--champ);font-weight:600}
 td.pt,th.pt{text-align:right;white-space:nowrap}
 tr.v td{background:rgba(201,162,75,.10)}
@@ -112,7 +112,7 @@ function tela(){
   history.replaceState(null,"",`?g=${g}&ano=${ano}`);
   const q=$("#q").value.trim().toLowerCase(),todos=I[g][ano]||[];
   const lista=todos.filter(e=>!q||[e.jogador,e.clube,e.nacionalidade].join(" ").toLowerCase().includes(q));
-  const tem=todos.some(e=>e.pontos!=null);
+  const tem=todos.some(e=>e.pontos!=null),c={};todos.forEach(e=>c[e.pos]=(c[e.pos]||0)+1);
   const vencedor=todos[0];
   document.title=`Indicados ${ano} | Bola de Ouro`;
   const resumo=`<div class="resumo"><div class="ano">${ano}</div><span><strong>${todos.length}</strong> indicados</span>`+
@@ -120,10 +120,10 @@ function tela(){
     (tem?"":`<span>Esta edição não tem pontos registrados.</span>`)+`</div>`;
   const linhas=lista.map(e=>{
     const corte=e.pos>10&&todos.find(x=>x.pos>10)===e&&!q;
-    return `<tr class="${e.pos===1?"v":""}${corte?" corte":""}"><td class="p">${e.pos}º</td><td class="n">${esc(e.jogador)}</td><td>${esc(e.clube)}</td><td>${esc(e.nacionalidade||"—")}</td>${tem?`<td class="pt">${e.pontos!=null?nf.format(e.pontos):"—"}</td><td class="pt">${e.percentual!=null?nf.format(e.percentual)+"%":"—"}</td>`:""}</tr>`}).join("");
+    return `<tr class="${e.pos===1?"v":""}${corte?" corte":""}"><td class="p">${c[e.pos]>1?"=":""}${e.pos}º</td><td class="n">${esc(e.jogador)}</td><td>${esc(e.clube)}</td><td>${esc(e.nacionalidade||"—")}</td>${tem?`<td class="pt">${e.pontos!=null?nf.format(e.pontos):"—"}</td><td class="pt">${e.percentual!=null?nf.format(e.percentual)+"%":"—"}</td>`:""}</tr>`}).join("");
   box.innerHTML=resumo+`<div class="tw"><table><thead><tr><th>Pos.</th><th>Jogador</th><th>Clube</th><th>Nacionalidade</th>${tem?'<th class="pt">Pontos</th><th class="pt">%</th>':""}</tr></thead><tbody>`+
     (linhas||`<tr><td colspan="${tem?6:4}">Nenhum resultado. Tente outro nome, clube ou país.</td></tr>`)+`</tbody></table></div>`+
-    `<p class="nota">Jogadores empatados repetem o mesmo número de posição. Clubes com seta (A → B) indicam transferência durante o ano da premiação. A linha dourada separa o top 10.</p>`;
+    `<p class="nota">Jogadores empatados aparecem com “=” antes da posição, como em =8º, e dividem a mesma colocação. Clubes com seta (A → B) indicam transferência durante o ano da premiação. A linha dourada separa o top 10.</p>`;
 }
 function genero(x){g=x;$("#g-m").setAttribute("aria-pressed",x==="m");$("#g-f").setAttribute("aria-pressed",x==="f");monta();tela()}
 function passo(d){const a=anos().slice().reverse(),i=a.indexOf(ano)+d;if(i>=0&&i<a.length){ano=a[i];monta();tela()}}
