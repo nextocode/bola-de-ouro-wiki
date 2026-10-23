@@ -14,7 +14,7 @@ O maior vencedor da história, com três títulos a mais que o segundo colocado,
 
 **Anos:** 2008, 2013, 2014, 2016, 2017 · **Clubes nas conquistas:** Manchester United, Real Madrid · **Seleção:** Portugal
 
-Primeiro título em 2008, pelo Manchester United, e outros quatro pelo Real Madrid. Em 2016 acumulou a Liga dos Campeões e a Eurocopa com Portugal. Com Messi, formou a dupla que venceu **todas as dez edições de 2008 a 2017**.
+Primeiro título em 2008, na temporada em que o Manchester United foi campeão inglês e da Liga dos Campeões. Os outros quatro vieram pelo Real Madrid, que é o clube em que ele mais venceu. Em 2014 fez 17 gols em uma única edição da Champions League, recorde, na campanha da Décima do Real. Em 2016 acumulou a Liga dos Campeões e a Eurocopa com Portugal, e em 2017 voltou a vencer a Champions e o Espanhol. Com Messi, formou a dupla que venceu **todas as dez edições de 2008 a 2017**, e em 2018 ainda terminou em segundo.
 
 ### Michel Platini: 3 títulos
 
@@ -48,11 +48,11 @@ Centroavante do Milan de Arrigo Sacchi e campeão da Eurocopa de 1988 com a Hola
 
 - **Lev Yashin (1963):** o **único goleiro** a vencer a Bola de Ouro. Dá nome ao troféu de melhor goleiro.
 - **George Weah (1995):** o **primeiro e único africano** premiado. Anos depois, foi presidente da Libéria.
+- **Fabio Cannavaro (2006):** zagueiro e capitão da Itália campeã mundial, um dos poucos defensores premiados.
 - **Luka Modrić (2018):** quebrou a hegemonia de Messi e Cristiano Ronaldo após uma década, na temporada em que a Croácia foi vice-campeã mundial e o Real Madrid conquistou a Champions.
 - **Karim Benzema (2022):** consagrado aos 34 anos, em temporada em que o Real Madrid foi campeão europeu.
 - **Rodri (2024):** volante do Manchester City, campeão europeu com a Espanha e eleito o melhor jogador da Eurocopa de 2024.
 - **Ousmane Dembélé (2025):** premiado na temporada do triplete do Paris Saint-Germain, com Champions League, Ligue 1 e Copa da França.
-- **Fabio Cannavaro (2006):** zagueiro e capitão da Itália campeã mundial, um dos poucos defensores premiados.
 
 ## Vencedoras
 

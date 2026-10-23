@@ -16,6 +16,8 @@ Todos os números abaixo valem até a edição de **2025** e podem ser conferido
 | **Único goleiro** | Lev Yashin (1963) | Dínamo de Moscou, União Soviética |
 | **Único africano** | George Weah (1995) | Libéria, pelo Milan |
 | **Mais títulos em clubes diferentes** | Lionel Messi | Barcelona, Paris Saint-Germain e Inter Miami |
+| **Mais títulos pelo Barcelona** | Lionel Messi | 6 (2009, 2010, 2011, 2012, 2015, 2019) |
+| **Mais títulos pelo Real Madrid** | Cristiano Ronaldo | 4 (2013, 2014, 2016, 2017), contra 2 de Di Stéfano |
 
 ## Sequências e hegemonias
 
@@ -58,7 +60,7 @@ Alguns dos maiores nomes da história não aparecem na lista:
 
 - **Pelé** e **Diego Maradona** jogaram na época em que o prêmio era restrito a europeus e a clubes europeus. Maradona recebeu uma Bola de Ouro **honorária** em 1995, e Pelé, um prêmio de honra em 2013.
 - **Xavi** e **Iniesta**, campeões de tudo com Barcelona e Espanha, nunca venceram.
-- **Neymar** chegou ao pódio em 2015 (terceiro lugar), mas nunca ganhou.
+- **Neymar** chegou ao pódio duas vezes (terceiro lugar em 2015 e em 2017), mas nunca ganhou.
 - **Kylian Mbappé** e **Erling Haaland** ainda não tinham vencido até a edição de 2025.
 
 ## No feminino

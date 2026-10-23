@@ -18,8 +18,9 @@ O Brasil tem **cinco títulos** no prêmio masculino, conquistados por **quatro 
 
 ## Quase lá
 
-- **Neymar** terminou em **terceiro lugar em 2015**, atrás de Messi e Cristiano Ronaldo, e nunca venceu.
+- **Neymar** terminou em **terceiro lugar em 2015 e em 2017**, atrás de Messi e Cristiano Ronaldo nas duas vezes, e nunca venceu.
 - **Vinícius Júnior** foi o **segundo colocado em 2024**, na edição vencida por Rodri.
+- **Raphinha** terminou em **quinto em 2025**, depois de uma temporada de 34 gols e 22 assistências pelo Barcelona e de ser o artilheiro da Champions League. A edição foi vencida por Dembélé.
 
 ## Honras e o feminino
 
