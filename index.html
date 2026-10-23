@@ -54,6 +54,22 @@ tr.rep td.n{color:var(--champ);font-weight:600}
 .b{display:inline-block;margin-left:8px;padding:1px 9px;border:1px solid var(--gold);border-radius:999px;color:var(--gold);font-size:12.5px;font-weight:600;white-space:nowrap}
 tr:hover td{background:rgba(201,162,75,.06)}
 .obs{color:var(--mute);font-size:14px}
+.tg{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;color:inherit;font:inherit}
+.tg::before{content:"";width:7px;height:7px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg);transition:transform .15s;flex:none;margin-right:2px}
+.tg[aria-expanded=true]::before{transform:rotate(45deg)}
+.tg:hover{color:var(--gold)}
+.tg:focus-visible{outline:2px solid var(--champ);outline-offset:3px;border-radius:3px}
+.nm{display:inline-block;padding-left:23px}
+tr.sub>td{background:var(--panel);padding:6px 14px 16px 37px;border-bottom:1px solid var(--line)}
+tr.sub:hover>td{background:var(--panel)}
+.mini{width:100%;min-width:0;border-collapse:collapse}
+.mini th{position:static;background:transparent;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;padding:8px 12px 6px 0}
+.mini td{padding:7px 12px 7px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.mini tr:last-child td{border-bottom:0}
+.mini tr:hover td{background:transparent}
+.mini .p{width:44px;color:var(--gold);font-weight:600}
+.mini .pt{text-align:right;color:var(--mute);white-space:nowrap}
+.vtodos{display:inline-block;margin-top:8px;font-size:14px}
 .po{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line)}
 .po .a{font:700 38px/1 var(--serif);color:var(--gold)}
 .po h3{margin:0 0 6px;font-size:26px;color:var(--champ)}
@@ -70,7 +86,7 @@ footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);colo
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b>Bola de Ouro</b><a href="#ranking">Ranking</a><a href="#vencedores">Vencedores</a><a href="#polemicas">Polêmicas</a><a href="#paginas">Perfis e história</a></div></nav>
+<nav><div class="wrap"><b>Bola de Ouro</b><a href="#ranking">Ranking</a><a href="#vencedores">Vencedores</a><a href="#polemicas">Polêmicas</a><a href="indicados.html">Indicados</a><a href="#paginas">Perfis e história</a></div></nav>
 
 <header class="hero"><div class="wrap">
 <p class="ano" id="h-ano" aria-hidden="true">2025</p>
@@ -91,7 +107,7 @@ footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);colo
 
 <section id="vencedores">
 <h2>Todos os vencedores</h2>
-<p class="sub">Quando um jogador vence de novo, aparece o selo com o número do título ao lado do nome, como “3º título”. Digite um nome, clube ou ano para filtrar.</p>
+<p class="sub">Quando um jogador vence de novo, aparece o selo com o número do título ao lado do nome, como “3º título”. Clique no nome do vencedor para abrir os outros nove do top 10 daquele ano, e use “ver todos os indicados” para a lista completa. Digite um nome, clube ou ano para filtrar.</p>
 <div class="tabs">
 <button id="t-m" aria-pressed="true">Masculino</button><button id="t-f" aria-pressed="false">Feminino</button>
 <input id="q" type="search" placeholder="Buscar por jogador, clube ou ano" aria-label="Buscar na tabela">
@@ -107,7 +123,7 @@ footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);colo
 <div class="po"><div class="a">2010</div><div><h3>Messi contra os campeões do mundo</h3><p>A Espanha tinha acabado de ganhar a Copa, com gol de Iniesta na final. Messi venceu o prêmio unificado com a FIFA, e Iniesta e Xavi completaram o pódio. Wesley Sneijder, que ganhou tudo com a Inter e foi vice-campeão mundial pela Holanda, ficou fora dele.</p></div></div>
 <div class="po"><div class="a">2013</div><div><h3>Ribéry e o triplete contra os 69 gols de Ronaldo</h3><p>Franck Ribéry ganhou Champions League, Bundesliga e Copa da Alemanha pelo Bayern de Munique, mais a Supercopa da Europa e o Mundial de Clubes antes da cerimônia, e foi eleito o melhor jogador da Europa pela UEFA. Cristiano Ronaldo terminou 2013 sem títulos pelo Real Madrid, mas fez cerca de 69 gols pelo clube e por Portugal, incluindo um recorde de 9 na fase de grupos da Champions e o hat-trick contra a Suécia na repescagem da Copa. Venceu com 27,99% dos votos, contra 24,72% de Messi e 23,36% de Ribéry. Ribéry criticou publicamente o resultado. A votação teve ainda o prazo prorrogado pela primeira vez, e técnicos de seleções menores disseram depois que o voto divulgado em seu nome não era o que tinham enviado.</p></div></div>
 <div class="po"><div class="a">2014</div><div><h3>Neuer e a Copa contra os 17 gols da Champions</h3><p>Cristiano Ronaldo foi campeão da Champions League com o Real Madrid, a Décima, e fez 17 gols na competição, recorde em uma edição. Também ganhou a Copa do Rei, e Portugal caiu na fase de grupos da Copa do Mundo. Venceu com 37,66% dos votos. Manuel Neuer foi campeão mundial com a Alemanha e muito elogiado no torneio, e ficou em terceiro com 15,72%, apenas 0,04 ponto percentual atrás de Messi (15,76%). O debate foi se o campeão do mundo, um goleiro, deveria ter ficado à frente do artilheiro do campeão europeu.</p></div></div>
-<div class="po"><div class="a">2018</div><div><h3>Modrić, Ronaldo e os campeões do mundo</h3><p>Luka Modrić foi campeão da Champions League com o Real Madrid pela terceira vez seguida e eleito o melhor jogador da Copa, na qual a Croácia foi vice-campeã. Venceu com 753 pontos, contra 476 de Cristiano Ronaldo, que foi o artilheiro da mesma Champions e trocou o Real Madrid pela Juventus em julho. Antoine Griezmann, campeão mundial e da Liga Europa, ficou em terceiro, e Kylian Mbappé, também campeão mundial, em quarto. Messi terminou em quinto, fora do pódio pela primeira vez em mais de dez anos, e nem ele nem Cristiano Ronaldo foram à cerimônia. O debate foi se o prêmio devia ir para o vice-campeão mundial ou para um dos franceses campeões do mundo, e se o resultado encerrou com razão a década de domínio dos dois. Quem defende Modrić lembra que ele também ganhou o prêmio The Best da FIFA em 2018.</p></div></div>
+<div class="po"><div class="a">2018</div><div><h3>Modrić ou Cristiano Ronaldo</h3><p>Luka Modrić foi campeão da Champions League com o Real Madrid pela terceira vez seguida e eleito o melhor jogador da Copa, na qual a Croácia foi vice-campeã. Venceu com 753 pontos, contra 476 de Cristiano Ronaldo, que era seu companheiro no Real Madrid, foi campeão da mesma Champions, terminou como artilheiro da competição e trocou o clube pela Juventus em julho. O debate foi entre os dois: quem defende Cristiano Ronaldo lembra os gols e o título europeu, e quem defende Modrić lembra a Copa e o fato de a votação ter encerrado, depois de dez edições, a sequência de Messi e Cristiano Ronaldo. Messi terminou em quinto, fora do pódio pela primeira vez em mais de dez anos, e nem ele nem Cristiano Ronaldo foram à cerimônia. Quem defende Modrić lembra que ele também ganhou o prêmio The Best da FIFA em 2018.</p></div></div>
 <div class="po"><div class="a">2019</div><div><h3>Messi ou Van Dijk</h3><p>Messi venceu com 686 pontos, só 7 a mais que Virgil van Dijk (679), campeão da Champions League pelo Liverpool, em uma das votações mais apertadas da história. Cristiano Ronaldo foi o terceiro, com 476. O debate foi sobre o prêmio favorecer quase sempre atacantes e quem faz gols.</p></div></div>
 <div class="po"><div class="a">2021</div><div><h3>Messi ou Lewandowski</h3><p>Lewandowski quebrou o recorde de gols em uma edição da Bundesliga, com 41, e já era visto como favorito em 2020, ano em que não houve prêmio. Messi, campeão da Copa América com a Argentina, venceu, e Lewandowski ficou em segundo. Ele recebeu o troféu de melhor atacante.</p></div></div>
 <div class="po"><div class="a">2023</div><div><h3>Messi ou Haaland</h3><p>Erling Haaland fez a temporada do triplete do Manchester City e foi o segundo colocado. Messi levou pela Copa do Mundo de 2022 vencida pela Argentina, e parte da imprensa achou que o prêmio deveria ter ido para Haaland.</p></div></div>
@@ -120,6 +136,7 @@ footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);colo
 <h2>Perfis, história e curiosidades</h2>
 <p class="sub">O restante da wiki está nas páginas abaixo.</p>
 <div class="links">
+<a href="indicados.html"><strong>Todos os indicados</strong><span>A lista completa de cada edição, ano a ano</span></a>
 <a href="pagina.html?p=perfis"><strong>Perfis dos campeões</strong><span>Messi, Cristiano Ronaldo, Platini, Cruyff e mais</span></a>
 <a href="pagina.html?p=ranking"><strong>Ranking completo</strong><span>Por jogador, país, clube e década</span></a>
 <a href="pagina.html?p=historia"><strong>História e regras</strong><span>Origem, votação e a fase com a FIFA</span></a>
@@ -135,7 +152,15 @@ footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);colo
 const $=s=>document.querySelector(s);
 const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const get=f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()});
-let D={m:[],f:[]},tab="m";
+let D={m:[],f:[]},I={m:{},f:{}},tab="m",aberto=new Set();
+const nf=new Intl.NumberFormat("pt-BR",{maximumFractionDigits:2});
+function pts(e){return e.pontos==null?"":nf.format(e.pontos)+(e.percentual!=null?` <span class="obs">(${nf.format(e.percentual)}%)</span>`:"")}
+function subLinha(ano){
+  const l=I[tab][ano]||[],resto=l.slice(1).filter(e=>e.pos<=10),tem=resto.some(e=>e.pontos!=null);
+  return `<tr class="sub"><td colspan="5"><table class="mini"><thead><tr><th>Pos.</th><th>Jogador</th><th>Clube</th><th>Nacionalidade</th>${tem?'<th class="pt">Pontos</th>':""}</tr></thead><tbody>`+
+    resto.map(e=>`<tr><td class="p">${e.pos}º</td><td>${esc(e.jogador)}</td><td>${esc(e.clube)}</td><td>${esc(e.nacionalidade||"—")}</td>${tem?`<td class="pt">${pts(e)||"—"}</td>`:""}</tr>`).join("")+
+    `</tbody></table><a class="vtodos" href="indicados.html?g=${tab}&amp;ano=${ano}">Ver todos os ${l.length} indicados de ${ano} →</a></td></tr>`;
+}
 
 function anota(l){const c={};return l.map(x=>{if(!x.jogador)return{...x,n:0};c[x.jogador]=(c[x.jogador]||0)+1;return{...x,n:c[x.jogador]}})}
 function conta(l,k){const c={};l.filter(x=>x.jogador).forEach(x=>c[x[k]]=(c[x[k]]||0)+1);return Object.entries(c).sort((a,b)=>b[1]-a[1])}
@@ -144,15 +169,16 @@ function barras(el,itens){const max=itens[0][1];$(el).innerHTML=itens.map(([n,q]
 function tabela(){
   const q=$("#q").value.trim().toLowerCase();
   const linhas=D[tab].filter(x=>!q||[x.ano,x.jogador,x.clube,x.nacionalidade].join(" ").toLowerCase().includes(q)).reverse();
-  $("#tb").innerHTML=linhas.length?linhas.map(x=>x.jogador?
-   `<tr class="${x.n>1?"rep":""}"><td class="y">${x.ano}</td><td class="n">${esc(x.jogador)}${x.n>1?`<span class="b">${x.n}º título</span>`:""}</td><td>${esc(x.nacionalidade)}</td><td>${esc(x.clube)}</td><td class="obs">${esc(x.observacao)}</td></tr>`:
-   `<tr><td class="y">${x.ano}</td><td colspan="3"><em>Não concedido</em></td><td class="obs">${esc(x.observacao)}</td></tr>`).join(""):
+  $("#tb").innerHTML=linhas.length?linhas.map(x=>{if(!x.jogador)return `<tr><td class="y">${x.ano}</td><td colspan="3"><em>Não concedido</em></td><td class="obs">${esc(x.observacao)}</td></tr>`;
+   const k=tab+"-"+x.ano,tem=(I[tab][x.ano]||[]).length>1,ab=aberto.has(k);
+   const nome=tem?`<button class="tg" data-k="${k}" aria-expanded="${ab}" title="Ver o top 10 de ${x.ano}">${esc(x.jogador)}</button>`:`<span class="nm">${esc(x.jogador)}</span>`;
+   return `<tr class="${x.n>1?"rep":""}"><td class="y">${x.ano}</td><td class="n">${nome}${x.n>1?`<span class="b">${x.n}º título</span>`:""}</td><td>${esc(x.nacionalidade)}</td><td>${esc(x.clube)}</td><td class="obs">${esc(x.observacao)}</td></tr>`+(tem&&ab?subLinha(x.ano):"")}).join(""):
    `<tr><td colspan="5">Nenhum resultado. Tente outro nome, clube ou ano.</td></tr>`;
 }
 function aba(t){tab=t;$("#t-m").setAttribute("aria-pressed",t==="m");$("#t-f").setAttribute("aria-pressed",t==="f");tabela()}
 
-Promise.all([get("data/vencedores-masculino.json"),get("data/vencedoras-feminino.json")]).then(([m,f])=>{
-  D.m=anota(m);D.f=anota(f);
+Promise.all([get("data/vencedores-masculino.json"),get("data/vencedoras-feminino.json"),get("data/indicados-masculino.json").catch(()=>({})),get("data/indicados-feminino.json").catch(()=>({}))]).then(([m,f,im,iff])=>{
+  D.m=anota(m);D.f=anota(f);I.m=im;I.f=iff;
   const v=D.m.filter(x=>x.jogador),ult=v[v.length-1],jog=conta(D.m,"jogador");
   $("#h-ano").textContent=ult.ano;
   $("#stats").innerHTML=[[v.length,"edições masculinas concedidas"],[jog.length,"jogadores diferentes premiados"],[jog[0][1],`títulos de ${jog[0][0]}, o recorde`],[D.f.filter(x=>x.jogador).length,"edições da Bola de Ouro feminina"]]
@@ -162,6 +188,7 @@ Promise.all([get("data/vencedores-masculino.json"),get("data/vencedoras-feminino
   tabela();
 }).catch(()=>{$("#erro").hidden=false});
 
+$("#tb").onclick=e=>{const b=e.target.closest(".tg");if(!b)return;const k=b.dataset.k;aberto.has(k)?aberto.delete(k):aberto.add(k);tabela();const n=document.querySelector(`.tg[data-k="${k}"]`);if(n)n.focus()};
 $("#t-m").onclick=()=>aba("m");$("#t-f").onclick=()=>aba("f");$("#q").oninput=tabela;
 </script>
 </body>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indicados | Bola de Ouro</title>
+<meta name="description" content="A lista completa de indicados e a classificação final de cada edição da Bola de Ouro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0c0a08;--panel:#15110c;--line:#2e2616;--gold:#c9a24b;--champ:#efe3c2;--bronze:#8a6a24;--text:#e6dfcd;--mute:#a39a82;
+--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-variant-numeric:lining-nums;margin:0;background:var(--ink);color:var(--text);font:400 17px/1.6 var(--sans)}
+a{color:var(--gold)}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(--champ);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:rgba(12,10,8,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;align-items:center;height:54px;overflow-x:auto;white-space:nowrap}
+nav b{font:700 21px var(--serif);margin-right:auto}
+nav b a{color:var(--champ);text-decoration:none}
+nav a{text-decoration:none;color:var(--mute);font-size:15px}
+nav a:hover,nav a[aria-current]{color:var(--champ)}
+header{padding:56px 0 24px;background:radial-gradient(60% 60% at 80% 0%,rgba(201,162,75,.16),transparent 70%)}
+h1{font:700 clamp(36px,6vw,58px)/1.05 var(--serif);color:var(--champ);margin:0 0 10px}
+.sub{color:var(--mute);margin:0;max-width:62ch}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:28px 0 20px}
+.ctl button{font:600 15px var(--sans);padding:9px 18px;border:1px solid var(--line);background:transparent;color:var(--mute);border-radius:999px;cursor:pointer}
+.ctl button[aria-pressed=true]{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.ctl select{font:600 16px var(--sans);padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--text);min-width:120px}
+.ctl .step{padding:9px 14px}
+.ctl .step:disabled{opacity:.35;cursor:default}
+.ctl input{flex:1;min-width:180px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:400 16px var(--sans)}
+.resumo{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:baseline;margin:0 0 16px}
+.resumo .ano{font:700 clamp(54px,10vw,92px)/1 var(--serif);color:transparent;-webkit-text-stroke:1.5px var(--gold);margin-right:6px}
+.resumo span{color:var(--mute);font-size:15px}
+.resumo strong{color:var(--champ)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top}
+th{background:var(--panel);color:var(--mute);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.p{font:700 22px var(--serif);color:var(--gold);width:64px}
+td.n{color:var(--champ);font-weight:600}
+td.pt,th.pt{text-align:right;white-space:nowrap}
+tr.v td{background:rgba(201,162,75,.10)}
+tr.corte td{border-top:2px solid var(--bronze)}
+tr:hover td{background:rgba(201,162,75,.06)}
+.obs{color:var(--mute);font-size:14px}
+.nota{color:var(--mute);font-size:14px;margin:14px 0 0;max-width:80ch}
+.vazio{padding:22px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--mute)}
+#erro{padding:16px;border:1px solid var(--bronze);margin:20px 0}
+footer{margin-top:72px;padding:28px 0 44px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<b><a href="index.html">Bola de Ouro</a></b>
+<a href="index.html#vencedores">Vencedores</a>
+<a href="indicados.html" aria-current="page">Indicados</a>
+<a href="pagina.html?p=ranking">Ranking</a>
+<a href="pagina.html?p=perfis">Perfis</a>
+<a href="pagina.html?p=historia">História</a>
+<a href="pagina.html?p=recordes-e-curiosidades">Recordes</a>
+<a href="pagina.html?p=brasileiros">Brasileiros</a>
+</div></nav>
+
+<header><div class="wrap">
+<h1>Todos os indicados</h1>
+<p class="sub">A classificação completa de cada edição, do vencedor ao último indicado. O número de nomes varia: edições antigas e as mais recentes têm listas de tamanhos diferentes.</p>
+</div></header>
+
+<main class="wrap">
+<div id="erro" hidden>Não consegui carregar os dados. Abra o site pelo endereço do GitHub Pages; abrir o arquivo direto do computador não funciona.</div>
+<div class="ctl">
+<button id="g-m" aria-pressed="true">Masculino</button><button id="g-f" aria-pressed="false">Feminino</button>
+<button class="step" id="ant" aria-label="Edição anterior">←</button>
+<select id="ano" aria-label="Ano da edição"></select>
+<button class="step" id="prox" aria-label="Próxima edição">→</button>
+<input id="q" type="search" placeholder="Filtrar por jogador, clube ou país" aria-label="Filtrar a lista">
+</div>
+<div id="saida"></div>
+</main>
+
+<footer><div class="wrap">Projeto independente, sem vínculo com a France Football ou a FIFA. Código e dados no <a href="https://github.com/nextocode/bola-de-ouro-wiki">GitHub</a>.</div></footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const get=f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f);return r.json()});
+const nf=new Intl.NumberFormat("pt-BR",{maximumFractionDigits:2});
+const rot={m:"masculina",f:"feminina"};
+let I={m:{},f:{}},g="m",ano=null;
+
+function anos(){return Object.keys(I[g]).map(Number).sort((a,b)=>b-a)}
+function monta(){
+  const a=anos();
+  if(!a.length){$("#ano").innerHTML="";ano=null;return}
+  if(!a.includes(ano))ano=a[0];
+  $("#ano").innerHTML=a.map(y=>`<option value="${y}"${y===ano?" selected":""}>${y}</option>`).join("");
+}
+function tela(){
+  const a=anos(),box=$("#saida");
+  $("#ant").disabled=!a.length||ano===a[a.length-1];
+  $("#prox").disabled=!a.length||ano===a[0];
+  if(!a.length){
+    box.innerHTML=`<div class="vazio">Ainda não há indicados cadastrados para a Bola de Ouro ${rot[g]}. Para incluir, preencha <code>data/indicados-${g==="m"?"masculino":"feminino"}.json</code> (um objeto com o ano como chave e a lista de classificados em ordem).</div>`;
+    history.replaceState(null,"","?g="+g);return;
+  }
+  history.replaceState(null,"",`?g=${g}&ano=${ano}`);
+  const q=$("#q").value.trim().toLowerCase(),todos=I[g][ano]||[];
+  const lista=todos.filter(e=>!q||[e.jogador,e.clube,e.nacionalidade].join(" ").toLowerCase().includes(q));
+  const tem=todos.some(e=>e.pontos!=null);
+  const vencedor=todos[0];
+  document.title=`Indicados ${ano} | Bola de Ouro`;
+  const resumo=`<div class="resumo"><div class="ano">${ano}</div><span><strong>${todos.length}</strong> indicados</span>`+
+    (vencedor?`<span>Vencedor${g==="f"?"a":""}: <strong>${esc(vencedor.jogador)}</strong></span>`:"")+
+    (tem?"":`<span>Esta edição não tem pontos registrados.</span>`)+`</div>`;
+  const linhas=lista.map(e=>{
+    const corte=e.pos>10&&todos.find(x=>x.pos>10)===e&&!q;
+    return `<tr class="${e.pos===1?"v":""}${corte?" corte":""}"><td class="p">${e.pos}º</td><td class="n">${esc(e.jogador)}</td><td>${esc(e.clube)}</td><td>${esc(e.nacionalidade||"—")}</td>${tem?`<td class="pt">${e.pontos!=null?nf.format(e.pontos):"—"}</td><td class="pt">${e.percentual!=null?nf.format(e.percentual)+"%":"—"}</td>`:""}</tr>`}).join("");
+  box.innerHTML=resumo+`<div class="tw"><table><thead><tr><th>Pos.</th><th>Jogador</th><th>Clube</th><th>Nacionalidade</th>${tem?'<th class="pt">Pontos</th><th class="pt">%</th>':""}</tr></thead><tbody>`+
+    (linhas||`<tr><td colspan="${tem?6:4}">Nenhum resultado. Tente outro nome, clube ou país.</td></tr>`)+`</tbody></table></div>`+
+    `<p class="nota">Jogadores empatados repetem o mesmo número de posição. Clubes com seta (A → B) indicam transferência durante o ano da premiação. A linha dourada separa o top 10.</p>`;
+}
+function genero(x){g=x;$("#g-m").setAttribute("aria-pressed",x==="m");$("#g-f").setAttribute("aria-pressed",x==="f");monta();tela()}
+function passo(d){const a=anos().slice().reverse(),i=a.indexOf(ano)+d;if(i>=0&&i<a.length){ano=a[i];monta();tela()}}
+
+Promise.all([get("data/indicados-masculino.json").catch(()=>({})),get("data/indicados-feminino.json").catch(()=>({}))]).then(([m,f])=>{
+  I.m=m;I.f=f;
+  const p=new URLSearchParams(location.search);
+  if(p.get("g")==="f")g="f";
+  if(p.get("ano"))ano=Number(p.get("ano"));
+  $("#g-m").setAttribute("aria-pressed",g==="m");$("#g-f").setAttribute("aria-pressed",g==="f");
+  monta();tela();
+}).catch(()=>{$("#erro").hidden=false});
+
+$("#g-m").onclick=()=>genero("m");$("#g-f").onclick=()=>genero("f");
+$("#ano").onchange=e=>{ano=Number(e.target.value);tela()};
+$("#ant").onclick=()=>passo(-1);$("#prox").onclick=()=>passo(1);
+$("#q").oninput=tela;
+</script>
+</body>
+</html>
